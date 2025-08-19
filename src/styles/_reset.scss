@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $color-white;
+  background-color: $color-bg-black;
+}
+
+ul li {
+  list-style: none;
+}
