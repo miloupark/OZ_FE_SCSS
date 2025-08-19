@@ -1,0 +1,39 @@
+@use "index" as *;
+
+// header
+.header-container {
+  @include flex-between;
+  padding: 10px 20px;
+  background-color: $color-black;
+
+  .menu-container {
+    @include flex-center(20px);
+    li {
+      @include txt-sm;
+    }
+  }
+}
+
+// section
+section {
+  @include flex-wrap;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+// content
+.content-container {
+  @include flex-column(flex-start, 5px);
+  img {
+    @include thumbnail;
+  }
+  span {
+    @include txt-status;
+  }
+  div {
+    @include txt-title;
+  }
+  p {
+    @include txt-desc;
+  }
+}
